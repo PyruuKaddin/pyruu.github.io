@@ -161,21 +161,6 @@
       const gamesBtn = document.getElementById("gamesBtn");
       const discordBtn = document.getElementById("discordBtn");
 
-      scriptBtn.addEventListener("click", () => {
-        const scriptBox = document.createElement("textarea");
-        scriptBox.value =
-          'loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();';
-        document.body.appendChild(scriptBox);
-        scriptBox.select();
-        document.execCommand("copy");
-        document.body.removeChild(scriptBox);
-        copyPopup.style.display = "block";
-        setTimeout(() => {
-          copyPopup.style.display = "none";
-        }, 1000);
-      });
-
-
       discordBtn.addEventListener("click", () => {
         window.open("https://discord.gg/9sjcnjHGtV");
       });
