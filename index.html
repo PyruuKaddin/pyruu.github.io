@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PyruuKaddin</title>
+
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.glitch.me/16ceab02-e899-49b3-8162-ecf9283a06ce%2Fe3479ab2890387e4c97ff44441098007.ico?v=1636815000100" />
+
+    <meta name = "author" content = "PyruuKaddin"/>
+    <meta name="description" content="PyruuKaddin" />
+    <meta name = "keywords" content = "PyruuKaddin"/>
+
+    <meta property="og:title" content="PyruuKaddin" />
+    <meta property = "og:description" content = "Official website for
+    PyruuKaddin"" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pyruukaddin.xyz" />
+    <meta property="og:secure_url" content="https://pyruukaddin.xyz" />
+    <meta property="og:image" content="https://cdn.glitch.me/16ceab02-e899-49b3-8162-ecf9283a06ce%2Fe3479ab2890387e4c97ff44441098007.ico?v=1636815000100"/>
+
+    <style>
+      body {
+        background-color: rgb(25, 25, 25);
+        color: white;
+        font-family: "Trebuchet MS";
+        background-image: url(Background.png);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      body::-webkit-scrollbar {
+        width: 12px;
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background-color: rgb(80, 80, 80);
+      }
+
+      #owlImage {
+        margin-top: 20px;
+        height: 90px;
+      }
+
+      #scriptBtn {
+        color: rgb(255, 255, 255);
+        background-color: rgb(45, 45, 45);
+        margin-top: 45px;
+        border: 0px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 650px;
+        height: 35px;
+      }
+
+      #copyPopup {
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        border: 0px;
+        border-radius: 4px;
+        text-align: center;
+        position: absolute;
+        display: none;
+        width: 150px;
+        height: 35px;
+      }
+
+      #gamesBtn {
+        background-color: rgb(45, 45, 45);
+        color: rgb(255, 255, 255);
+        font-size: large;
+        border: 0px;
+        border-radius: 2px;
+        cursor: pointer;
+        width: 100px;
+        height: 50px;
+      }
+
+      #discordBtn {
+        background-color: rgb(114, 137, 218);
+        color: rgb(255, 255, 255);
+        font-size: large;
+        border: 0px;
+        border-radius: 2px;
+        cursor: pointer;
+        width: 100px;
+        height: 50px;
+      }
+
+      #detailLine {
+        margin-top: 45px;
+        border: 1px solid rgb(153, 95, 39);
+        width: 500px;
+        height: 0px;
+      }
+
+      #copyBtn:hover {
+        background-color: rgb(70, 70, 70);
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" value="Copied to clipboard!" readonly id="copyPopup" />
+    <center>
+      <img
+        src="https://cdn.discordapp.com/avatars/464469549627211796/e3479ab2890387e4c97ff44441098007.webp?size=128"
+        alt="Pyruu"
+        id="image"
+      />
+      <br />
+
+      <br />
+      <div id="detailLine"></div>
+      <br />
+      <h1 style="font-family: monospace;">About me</h1>
+      <i style="color: rgb(180, 180, 180);"
+        ><span style="color: rgb(153, 95, 39);">PyruuKaddin</span>
+        <li>Roblox Developer</li>
+        <li>Group Administrator </li>
+        <li>I am 17 and am currently learning Lua.</li>
+        <li>I have a diploma in computer science.</li>
+        <li>I specialise in Cybersecurity and Ethical Hacking</li>
+        <li>I'm also a community moderator on discord</li>
+      <div id="detailLine"></div>
+      <br />
+      <h1 style="font-family: monospace;">Contact me</h1>
+      <i style="color: rgb(180, 180, 180);"
+        ><a
+          href="https://discord.gg/9sjcnjHGtV"
+          target="_blank"
+          style="color: rgb(180, 180, 180);"
+          >Discord</a
+        ><br /><br /><a
+          href="https://www.roblox.com/users/630642763/profile"
+          target="_blank"
+          style="color: rgb(180, 180, 180);"
+          >Roblox</a
+        ><br /><br /><a
+          href="hhttps://t.me/dannzone
+          target="_blank"
+          style="color: rgb(180, 180, 180);"
+          >Telegram</a
+        ></i
+      >
+      <div id="detailLine"></div>
+      <br />
+      <br />
+      <h1 style="font-family: monospace; color: rgb(114, 137, 218);">
+        Discord
+      </h1>
+      <button id="discordBtn">JOIN</button>
+      <br />
+      <br />
+      <br />
+    </center>
+
+    <script type="text/javascript">
+      const scriptBtn = document.getElementById("scriptBtn");
+      const copyPopup = document.getElementById("copyPopup");
+      const gamesBtn = document.getElementById("gamesBtn");
+      const discordBtn = document.getElementById("discordBtn");
+
+      scriptBtn.addEventListener("click", () => {
+        const scriptBox = document.createElement("textarea");
+        scriptBox.value =
+          'loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();';
+        document.body.appendChild(scriptBox);
+        scriptBox.select();
+        document.execCommand("copy");
+        document.body.removeChild(scriptBox);
+        copyPopup.style.display = "block";
+        setTimeout(() => {
+          copyPopup.style.display = "none";
+        }, 1000);
+      });
+
+
+      discordBtn.addEventListener("click", () => {
+        window.open("https://discord.gg/9sjcnjHGtV");
+      });
+    </script>
+  </body>
+</html>
