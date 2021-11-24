@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PyruuKaddin</title>
+
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.glitch.me/16ceab02-e899-49b3-8162-ecf9283a06ce%2Fe3479ab2890387e4c97ff44441098007.ico?v=1636815000100" />
+
+    <meta name = "author" content = "PyruuKaddin"/>
+    <meta name="description" content="PyruuKaddin" />
+    <meta name = "keywords" content = "PyruuKaddin"/>
+
+    <meta property="og:title" content="PyruuKaddin" />
+    <meta property = "og:description" content = "Official website for
+    PyruuKaddin"" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pyruukaddin.xyz" />
+    <meta property="og:secure_url" content="https://pyruukaddin.xyz" />
+    <meta property="og:image" content="https://cdn.glitch.me/16ceab02-e899-49b3-8162-ecf9283a06ce%2Fe3479ab2890387e4c97ff44441098007.ico?v=1636815000100"/>
+
+    <style>
+      body {
+        background-color: rgb(25, 25, 25);
+        color: white;
+        font-family: "Trebuchet MS";
+        background-image: url(Background.png);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      body::-webkit-scrollbar {
+        width: 12px;
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background-color: rgb(80, 80, 80);
+      }
+      #discordBtn {
+        background-color: rgb(114, 137, 218);
+        color: rgb(255, 255, 255);
+        font-size: large;
+        border: 0px;
+        border-radius: 2px;
+        cursor: pointer;
+        width: 100px;
+        height: 50px;
+      }
+
+      #detailLine {
+        margin-top: 45px;
+        border: 1px solid rgb(153, 95, 39);
+        width: 500px;
+        height: 0px;
+      }
+
+      #copyBtn:hover {
+        background-color: rgb(70, 70, 70);
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <img
+        src="https://cdn.discordapp.com/avatars/464469549627211796/e3479ab2890387e4c97ff44441098007.webp?size=128"
+        alt="Pyruu"
+        id="image"
+      />
+      <br />
+<h1>Pyruu
+      </h1>
+      <br />
+      <div id="detailLine"></div>
+      <br />
+      <h1 style="font-family: monospace;">About me</h1>
+      <i style="color: rgb(180, 180, 180);"
+        ><span style="color: rgb(153, 95, 39);">PyruuKaddin</span>
+        <li>Roblox Developer</li>
+        <li>Group Administrator </li>
+        <li>I am 17 and am currently learning Lua.</li>
+        <li>I have a diploma in computer science.</li>
+        <li>I am trying to get into Cybersecurity and Ethical Hacking at university</li>
+        <li>I'm also a community moderator on discord</li>
+      <div id="detailLine"></div>
+      <br />
+      <h1 style="font-family: monospace;">Contact me</h1>
+      <i style="color: rgb(180, 180, 180);"
+        ><a
+          href="https://discord.gg/B7uNX6ndwZ"
+          target="_blank"
+          style="color: rgb(180, 180, 180);"
+          >Discord</a
+        ><br /><br /><a
+          href="https://www.roblox.com/users/630642763/profile"
+          target="_blank"
+          style="color: rgb(180, 180, 180);"
+          >Roblox</a
+        ><br /><br /><a
+          href="https://t.me/dannzone"
+          target="_blank"
+          style="color: rgb(180, 180, 180);"
+          >Telegram</a
+        ></i
+      >
+      <div id="detailLine"></div>
+      <br />
+      <br />
+      <h1 style="font-family: monospace; color: rgb(114, 137, 218);">
+        Discord
+      </h1>
+      <button id="discordBtn" onclick="window.open('https://discord.gg/B7uNX6ndwZ','newtab','width=1000,height=700'); return false;">Join</button>
+
+      <br />
+      <br />
+      <br />
+    </center>
+    </script>
+  </body>
+</html>
